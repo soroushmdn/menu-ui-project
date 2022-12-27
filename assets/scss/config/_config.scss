@@ -1,0 +1,43 @@
+@font-face {
+  font-family: '300';
+  src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: '400';
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: '700';
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: '400';
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// @@@@@@@@@@@@@@@ scroll bar @@@@@@@@@@@@@@@
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.2rem;
+}

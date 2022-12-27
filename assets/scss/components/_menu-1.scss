@@ -1,0 +1,111 @@
+.menu-1 {
+  position: relative;
+  background: hsl(162, 99%, 97%);
+  padding-block: 25rem;
+
+  nav {
+    background: hsl(162, 99%, 30%);
+    position: absolute;
+    // position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: max-content;
+    padding-block: 5rem;
+    padding-inline: 1rem;
+    border-radius: 0 3rem 3rem 0;
+
+    ul {
+      display: grid;
+      gap: 2rem;
+
+      a {
+        position: relative;
+
+        i {
+          color: hsl(162, 100%, 98%);
+          font-size: 1.5rem;
+          padding: 0.5rem;
+          border-radius: 50%;
+          display: flex;
+          transition: background 0.3s, color 0.3s;
+        }
+
+        span {
+          background: hsl(162, 99%, 10%);
+          color: hsl(162, 100%, 98%);
+          position: absolute;
+          left: 4.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          padding-block: 0.3rem;
+          padding-inline: 1rem;
+          border-radius: 1rem;
+          white-space: nowrap;
+          opacity: 0;
+          pointer-events: none;
+          transition: left 0.3s, opacity 0.3s;
+        }
+      }
+    }
+
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    // @@@@@@@@@@@@@  SHAPES  @@@@@@@@@@@@
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    .square {
+      background: hsl(162, 99%, 30%);
+    }
+    .circle {
+      background: hsl(162, 99%, 97%);
+    }
+
+    .square,
+    .circle {
+      position: absolute;
+      left: 0rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .square-top,
+    .circle-top {
+      top: -2.2rem;
+    }
+
+    .square-bottom,
+    .circle-bottom {
+      bottom: -2.2rem;
+    }
+
+    .circle-top {
+      border-bottom-left-radius: 2.2rem;
+    }
+
+    .circle-bottom {
+      border-top-left-radius: 2.2rem;
+    }
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@ HOVER @@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  nav ul a:hover i {
+    background: hsl(162, 100%, 98%);
+    color: hsl(162, 99%, 30%);
+  }
+
+  nav ul a:hover span {
+    left: 4rem;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@  Js classes  @@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  .active-link i {
+    background: hsl(162, 100%, 98%);
+    color: hsl(162, 99%, 30%);
+  }
+}

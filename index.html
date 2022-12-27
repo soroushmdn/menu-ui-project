@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENU</title>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@ FAVICON @@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@  remixicon.com  @@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/remixicon.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@   CSS   @@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@   MENU 1   @@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="menu-1">
+      <nav>
+        <ul>
+          <a href="#" class="active-link">
+            <i class="ri-pencil-line"></i>
+
+            <span> Pencil </span>
+          </a>
+          <a href="#">
+            <i class="ri-quill-pen-line"></i>
+
+            <span> Quil Pen </span>
+          </a>
+          <a href="#">
+            <i class="ri-brush-line"></i>
+
+            <span> Brush </span>
+          </a>
+          <a href="#">
+            <i class="ri-mark-pen-line"></i>
+
+            <span> Marker </span>
+          </a>
+          <a href="#">
+            <i class="ri-eraser-line"></i>
+
+            <span> Eraser </span>
+          </a>
+        </ul>
+
+        <div class="square square-top"></div>
+        <div class="circle circle-top"></div>
+
+        <div class="square square-bottom"></div>
+        <div class="circle circle-bottom"></div>
+      </nav>
+    </section>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@   MAIN JS  @@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script>
+      const navLinks = document.querySelectorAll('.menu-1 nav ul a');
+
+      navLinks.forEach((navLink) => {
+        navLink.addEventListener('click', function () {
+          navLinks.forEach((navLink) => {
+            navLink.classList.remove('active-link');
+            this.classList.add('active-link');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
