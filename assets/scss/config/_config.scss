@@ -36,8 +36,10 @@ img {
 ::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 0.2rem;
+  background: hsl(0, 0%, 80%);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.2rem;
+  background: hsl(0, 0%, 65%);
 }

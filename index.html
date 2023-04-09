@@ -68,19 +68,33 @@
     </section>
 
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@   MENU 2   @@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="menu-2">
+      <nav>
+        <a href="#" class="nav__logo">
+          <span>stack</span>
+          <i class="ri-stack-line"></i>
+        </a>
+
+        <div class="nav__menu">
+          <ul>
+            <li><a href="#" class="nav__link">home</a></li>
+            <li><a href="#" class="nav__link">services</a></li>
+            <li><a href="#" class="nav__link">about</a></li>
+            <li><a href="#" class="nav__link">contact us</a></li>
+          </ul>
+
+          <i class="ri-close-fill nav__close"></i>
+        </div>
+
+        <i class="ri-menu-4-line nav__toggle"></i>
+      </nav>
+    </section>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <!-- @@@@@@@@@@@@   MAIN JS  @@@@@@@@@@@@ -->
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-    <script>
-      const navLinks = document.querySelectorAll('.menu-1 nav ul a');
-
-      navLinks.forEach((navLink) => {
-        navLink.addEventListener('click', function () {
-          navLinks.forEach((navLink) => {
-            navLink.classList.remove('active-link');
-            this.classList.add('active-link');
-          });
-        });
-      });
-    </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
