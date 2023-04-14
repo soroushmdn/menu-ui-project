@@ -8,6 +8,7 @@
     top: 1.5rem;
     left: 0;
     width: 100%;
+    z-index: 1;
   }
 
   .container {
@@ -143,6 +144,7 @@
       background: hsl(246, 53%, 26%);
       box-shadow: 0 0 5px hsl(256, 100%, 12%);
       position: absolute;
+      z-index: -1;
       top: -20rem;
       left: 1rem;
       right: 1rem;
